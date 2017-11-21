@@ -1,0 +1,16 @@
+body{
+	font-family: Orienta, Serif;
+	text-align: justify;
+}
+
+a{
+	text-decoration: none;
+	color: #000;
+}
+
+/*MENU*/
+
+header li{
+	display: inline-block;
+}
+
