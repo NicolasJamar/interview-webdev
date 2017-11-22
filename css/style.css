@@ -8,12 +8,15 @@ body{
 	/*https://www.pexels.com/search/web%20design/*/
 	background-size: 100%;
 	color: #fff;
+
 }
 
 main{
-	width: 90%;
+	width: 70%;
 	margin: auto;
+
 }
+
 
 a{
 	text-decoration: none;
@@ -70,8 +73,7 @@ header li:hover{
 /*MAIN*/
 
 main{
-	display: flex;
-	flex-direction: row;
+	
 }
 
 
@@ -80,12 +82,20 @@ main{
 
 #image{
 	position: fixed;
-	top: 100px;
+	top: 180px;
+	left: 50px;
 }
 
 #image img{
-	width: 150px;
+	width: 250px;
 	filter: grayscale(100%);
+-webkit-clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+}
+
+#image ul{
+	display: flex;
+	justify-content: space-between;
 }
 
 
@@ -93,6 +103,5 @@ main{
 /*MAIN DROITE : TEXTE*/
 
 #texte{
-	display: flex;
-	flex-direction: column;
+	margin-left: 300px;
 }
