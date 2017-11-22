@@ -10,7 +10,7 @@ body{
 	color: #fff;
 }
 
-#container{
+main{
 	width: 90%;
 	margin: auto;
 	/*background-image: none;
@@ -29,18 +29,26 @@ li{
 
 /*MENU*/
 
-nav{
+header nav{
+	width: 100%;
+	position: fixed;
+	background:linear-gradient(
+      to right,
+      red,
+      #292929 30%
+    );
 	
 }
 
 header ul{
 	display: flex;
-	justify-content: flex-end; 
+	justify-content: flex-end;
+	margin:0;
 }
 
 header li{
-	
-	margin: 5px 10px 5px 15px;
+	padding: 18px;
+	margin: ;
 	opacity: 0.5;
 	
 }
@@ -56,6 +64,7 @@ header li:hover{
 
 #titre{
 	text-align: center;
+	position: inherit;
 
 }
 
@@ -70,10 +79,15 @@ main{
 
 /*MAIN GAUCHE : IMAGE*/
 
+#image{
+	position: fixed;
+}
+
 #image img{
-	width: 100px;
+	width: 150px;
 	filter: grayscale(100%);
 }
+
 
 
 /*MAIN DROITE : TEXTE*/
