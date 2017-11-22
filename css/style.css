@@ -37,16 +37,19 @@ header nav{
       red,
       #292929 30%
     );
+
 	
 }
 
 header ul{
-	display: flex;
-	justify-content: flex-end;
+
+	/*display: flex;
+	justify-content: flex-end;*/
 	margin:0;
 }
 
 header li{
+	display: inline-block;
 	padding: 18px;
 	margin: ;
 	opacity: 0.5;
@@ -62,10 +65,11 @@ header li:hover{
 
 /*GRAND TITRE*/
 
-#titre{
+.titre{
+	/*position: relative;*/
+	margin-top: 500px;
 	text-align: center;
-	position: inherit;
-
+	
 }
 
 /*MAIN*/
