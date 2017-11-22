@@ -1,16 +1,84 @@
+
+
 body{
 	font-family: Orienta, Serif;
 	text-align: justify;
+	
+	background-image: url('../img/indexfoto.jpg');
+	/*https://www.pexels.com/search/web%20design/*/
+	background-size: 100%;
+	color: #fff;
+}
+
+#container{
+	width: 90%;
+	margin: auto;
+	/*background-image: none;
+	  background-color: transparent;
+	  background-repeat: no-repeat;*/
 }
 
 a{
 	text-decoration: none;
-	color: #000;
+	color: #fff;
+}
+
+li{
+	list-style-type: none;
 }
 
 /*MENU*/
 
-header li{
-	display: inline-block;
+nav{
+	
 }
 
+header ul{
+	display: flex;
+	justify-content: flex-end; 
+}
+
+header li{
+	
+	margin: 5px 10px 5px 15px;
+	opacity: 0.5;
+	
+}
+
+header li:hover{
+	transition: 0.9s ease;
+  	opacity: 1;
+}
+
+
+
+/*GRAND TITRE*/
+
+#titre{
+	text-align: center;
+
+}
+
+/*MAIN*/
+
+main{
+	display: flex;
+	flex-direction: row;
+}
+
+
+
+/*MAIN GAUCHE : IMAGE*/
+
+#image img{
+	width: 100px;
+	filter: grayscale(100%);
+}
+
+
+/*MAIN DROITE : TEXTE*/
+
+#texte{
+	display: flex;
+	flex-direction: column;
+}
