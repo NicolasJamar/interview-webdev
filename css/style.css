@@ -1,9 +1,9 @@
 
 
 body{
+	margin: 0;
 	font-family: Orienta, Serif;
 	text-align: justify;
-	
 	background-image: url('../img/indexfoto.jpg');
 	/*https://www.pexels.com/search/web%20design/*/
 	background-size: 100%;
@@ -13,9 +13,6 @@ body{
 main{
 	width: 90%;
 	margin: auto;
-	/*background-image: none;
-	  background-color: transparent;
-	  background-repeat: no-repeat;*/
 }
 
 a{
@@ -32,20 +29,19 @@ li{
 header nav{
 	width: 100%;
 	position: fixed;
+	/*! tjs dire à quelle position un fixe doit rester avec un "top", bottom ect..*/
+	top:0;
 	background:linear-gradient(
       to right,
       red,
-      #292929 30%
-    );
+      #292929 30%);
 
-	
 }
 
 header ul{
-
-	/*display: flex;
-	justify-content: flex-end;*/
-	margin:0;
+	display: flex;
+	justify-content: flex-end;
+	margin: 0 15%;
 }
 
 header li{
@@ -66,11 +62,10 @@ header li:hover{
 /*GRAND TITRE*/
 
 .titre{
-	/*position: relative;*/
-	margin-top: 500px;
+	margin-top: 85px;
 	text-align: center;
-	
 }
+
 
 /*MAIN*/
 
@@ -85,6 +80,7 @@ main{
 
 #image{
 	position: fixed;
+	top: 100px;
 }
 
 #image img{
