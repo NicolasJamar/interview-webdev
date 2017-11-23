@@ -11,11 +11,6 @@ body{
 
 }
 
-main{
-	width: 70%;
-	margin: auto;
-
-}
 
 
 a{
@@ -27,6 +22,13 @@ li{
 	list-style-type: none;
 }
 
+/*HEADER*/
+
+header{
+	
+	
+}
+
 /*MENU*/
 
 header nav{
@@ -34,9 +36,7 @@ header nav{
 	position: fixed;
 	/*! tjs dire à quelle position un fixe doit rester avec un "top", bottom ect..*/
 	top:0;
-	background:linear-gradient(
-      to right,
-      red,
+	background:linear-gradient(to right, red,
       #292929 30%);
 
 }
@@ -60,42 +60,63 @@ header li:hover{
   	opacity: 1;
 }
 
-
-
 /*GRAND TITRE*/
 
 .titre{
-	margin-top: 85px;
+	margin: 55px auto 40px;
+	padding: 10px auto 10px;
 	text-align: center;
+	text-transform: uppercase;
+	color: #d21818;
+	background:linear-gradient(to right, red,
+      #292929 30%);
+	
 }
 
 
 /*MAIN*/
 
 main{
-	
+	width: 75%;
+	margin: auto;
 }
-
-
 
 /*MAIN GAUCHE : IMAGE*/
 
-#image{
+.image{
 	position: fixed;
 	top: 180px;
-	left: 50px;
+	left: 30px;
 }
 
-#image img{
-	width: 250px;
+.image img{
+	width: 260px;
 	filter: grayscale(100%);
--webkit-clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
-clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+	-webkit-clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+	clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
 }
 
-#image ul{
+.image ul{
 	display: flex;
-	justify-content: space-between;
+	justify-content: center;
+	padding-left: 0;
+	font-size: 35px;
+}
+
+.image li{
+	margin: 0 25px;
+}
+
+#sfdlogo{
+	text-align: center;
+}
+
+#sfdlogo img{
+	width: 80px;
+}
+
+#sfdlogo figcaption{
+	margin-top: 15px;
 }
 
 
@@ -103,5 +124,6 @@ clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
 /*MAIN DROITE : TEXTE*/
 
 #texte{
-	margin-left: 300px;
+	background: linear-gradient(to right, red, rgba(0,0,0, 0.1) );
+	margin-left: 25%;
 }
