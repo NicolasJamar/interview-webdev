@@ -1,26 +1,34 @@
-body{
-	margin: 0;
-	padding: 0;
-	border: 0;
+html, body{
+	margin:0;
+   	padding:0;
+   	height:100%;
+}
 
+body{
+	
+	border: 0;
 	font-family: Orienta, Serif;
 	text-align: justify;
 	background-image: url('../img/indexfoto.jpg');
-	/*https://www.pexels.com/search/web%20design/*/
+	/* https://www.pexels.com/search/web%20design/ */
 	background-size: cover;
 	color: #fff;
 
 }
 
 #container{
-
+	height: auto;
+    min-height: 100%;
+    position: relative;
+    
 }
 
+/*
 table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
-
+*/
 
 a{
 	text-decoration: none;
@@ -46,7 +54,7 @@ header nav{
 	/*! tjs dire à quelle position un fixe doit rester avec un "top", bottom ect..*/
 	top:0;
 	background:linear-gradient(to right, red,
-      rgba(253,253,253,0) 30%);
+     rgba(41, 41, 41, 1) 30%);
 
 }
 
@@ -78,7 +86,7 @@ header li:hover{
 	text-transform: uppercase;
 	color: #fff;
 	background:linear-gradient(to right, red,
-	 rgba(253,253,253,0) 30%);
+	 #29292930  30%);
 	
 }
 
@@ -88,6 +96,7 @@ header li:hover{
 main{
 	width: 75%;
 	margin: auto;
+
 }
 
 /*MAIN GAUCHE : IMAGE*/
@@ -135,16 +144,22 @@ main{
 #texte{
 	background: linear-gradient(to right, red, rgba(0,0,0, 0.1) );
 	margin-left: 25%;
+	
 }
 
 /*FOOTER*/
 
 footer{
+	position: absolute;
 	width: 100%;
-	height: 100%;
+	
+	margin-top: 100px;
+
+	bottom: 0;
+		
 	padding: 5px;
 	background:linear-gradient(to right, red,
-	 rgba(253,253,253,1)30%);
+	 rgba(41, 41, 41, 1) 30%);
 	text-align: center;
 	justify-content: center;
 }
