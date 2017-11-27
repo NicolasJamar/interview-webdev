@@ -4,6 +4,7 @@
 	<meta charset="UTF-8">
 	<title>Interview Webdev</title>
 	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script src="css/script.js"></script>
 	<meta name="description" content="
 	interview d'un web Developer">
 	<meta name="keywords" content="Web Developer interview BeCode">
@@ -20,8 +21,8 @@
 			<ul>
 				<li><a href="index.html">Accueil</a></li>
 				<li><a href="makingof.html">Making Of</a></li>
-				<li><a href="entreprise.html">Entreprise</a></li>
-				<li><a href="interview.html">Interview</a></li>
+				<li><a href="entreprise.html">L'Entreprise</a></li>
+				<li><a href="interview.html">L'Interview</a></li>
 				<li><a href="conclusion.html">Conclusion</a></li>
 			</ul>
 		</nav>
@@ -35,15 +36,15 @@
 		</section>
 		<section id="texte">
 			<article>
-				<input type="text" value="Présentation">
-				<h3>Présentation</h3>
-				<div class="content">
+				<button onclick="show1()"><h3>
+				Présentation</h3></button>
+				<div id="content1">
 					<h4>Peux-tu te présenter brièvement?</h4>
 						<ul>
 							<li>Nom : Johan Delforge</li>
 							<li>Âge : 38 ans</li>
 							<li>Résidence : Pont-à-Celles</li>
-							<li>Profession : Web developer fullstack</li>
+							<li>Profession : Web developer fulSlstack</li>
 						</ul>
 					<h4>Où travailles-tu ?</h4>
 						<p>A domicile, comme indépendant via la Smart. Il m’arrive également de travailler lorsque je pars en voyage.</p>
@@ -60,8 +61,8 @@
 			</article>
 			
 			<article>
-				<div class="show"><h3>Pourquoi le webdevelopment ?</h3></div>
-					<div class="content">
+				<button onclick="show2()"><h3>Pourquoi le webdevelopment ?</h3></button>
+					<div id="content2">
 						<h4>Qu’est-ce qui t'a donné envie de faire ce métier ? </h4>
 							<p>Avoir un métier bien payé qui permet d’apprendre constamment. Egalement, travailler à domicile. 
 							A la base, j’ai une passion pour l’informatique. Je monte des PC depuis mes 14 ans.
@@ -75,9 +76,10 @@
 							<p>J’avais un ami qui était web designer et je lui ai proposé de faire ses sites car il sous-traitait à l’étranger. Je me suis lancé à l’aveugle en réalisant un premier site pour lui. Il n’était pas trop compliqué à réaliser pour un développeur mais je n’y connaissais rien. C’était un défi et surtout un boulot rémunéré. Ca m’a pris 6 semaines pour le réaliser. </p>
 					</div>
 			</article>
+
 			<article>
-				<div class="show"><h3>Un bon webdeveloper...</h3></div>
-					<div class="content">
+				<button onclick="show3()"><h3>Un bon webdeveloper...</h3></button>
+					<div id="content3">
 						<h4>Quelles sont les qualités personnelles nécessaires pour exercer ce métier selon toi ? </h4>
 							<p>Avoir une écoute active de ses collègues. 
 							Posséder un esprit d’abstraction. Être rationnel, méthodique, juqu’au boutiste. Avoir l’oeil avisé. 
@@ -100,8 +102,8 @@
 					</div>
 			</article>
 			<article>
-				<div class="show"><h3>Contraintes</h3></div>
-					<div class="content"><h4>Quelles sont les personnes avec qui tu es amené à entrer en relation ?</h4>
+				<button onclick="show4()"><h3>Contraintes</h3></button>
+					<div id="content4"><h4>Quelles sont les personnes avec qui tu es amené à entrer en relation ?</h4>
 						<p>Web designer/gestionnaire de projets. Je n’ai pas de contacts avec les clients.</p>
 					<h4>Y a-t-il des conditions de travail spécifiques ? Des contraintes physiques ?</h4>
 						<p>Tout le temps assis. Etre présent en journée. </p>
@@ -110,8 +112,8 @@
 					</div>
 			</article>
 			<article>
-				<div class="show"><h3>Le marché de l'emploi</h3></div>
-					<div class="content">
+				<button onclick="show5()"><h3>Le marché de l'emploi</h3></button>
+					<div id="content5">
 						<h4>Quelles sont les évolutions possibles selon toi ?</h4>
 							<p>Infinies, ça va dans tous les sens. </p>
 						<h4>Quel est l'état du marché de l'emploi pour ce métier en général selon toi ? Dans ta zone géographique ? </h4>
@@ -123,8 +125,8 @@
 					</div>
 			</article>
 			<article>
-				<div class="show"><h3>Conseils…</h3></div>
-					<div class="content"><h4>Y a-t-il des personnes à qui tu déconseillerais de faire ce métier ? </h4>
+				<button onclick="show6()"><h3>Conseils…</h3></button>
+					<div id="content6"><h4>Y a-t-il des personnes à qui tu déconseillerais de faire ce métier ? </h4>
 						<p>Il faut l’esprit adapté (voir réponse précédente) et être persévérant. Pouvoir rester derrière un PC toute la journée. </p>
 					
 					<h4>Quels conseils me donnerais-tu ? </h4>
@@ -132,16 +134,12 @@
 					</div>
 			</article>
 			
-		<input type="text" value="CLICK TO SHOW CONTENT">
-<div id="content1">
-and the content will show.
-</div>
-					
+							
 		</section>
 	</main>
-	<footer>
-		<h5>© Nicolas Jamar Web Developer Junior</h5>
-	</footer>
+		<footer>
+			<h5>© Nicolas Jamar Web Developer Junior</h5>
+		</footer>
 	</div>
 	
 </body>

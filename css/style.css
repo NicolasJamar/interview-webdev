@@ -11,14 +11,17 @@ body{
 	/* https://www.pexels.com/search/web%20design/ */
 	background-size: cover;
 	color: #fff;
-
+	/*position: relative;*/
 }
 
 #container{
 	height: auto;
-    min-height: 100%;
-    position: relative;
-    
+    /*min-height: 100%;*/
+    position: relative;	  
+}
+
+h1, h4{
+	margin-top: 0;
 }
 
 h3{
@@ -26,7 +29,6 @@ h3{
 }
 
 h4{
-	margin-top: 0;
 	padding-top: 25px;
 }
 
@@ -45,17 +47,16 @@ li{
 
 header nav{
 	width: 100%;
-	position: fixed;
+	/*position: fixed;
 	/*! tjs dire à quelle position un fixe doit rester avec un "top", bottom ect..*/
 	top:0;
 	background:linear-gradient(to right, red,
-     rgba(41, 41, 41, 1) 30%);
-
+     #29292930   30%);
 }
 
 header ul{
 	display: flex;
-	justify-content: flex-end;
+	justify-content: center;
 	margin: 0 15%;
 }
 
@@ -70,13 +71,15 @@ header li{
 header li:hover{
 	transition: 0.9s ease;
   	opacity: 1;
+  	font-size: 30px;
 }
+
 
 /*GRAND TITRE*/
 
 .titre{
-	margin: 55px auto 40px;
-	padding: 10px auto 10px;
+	margin: 0px auto 40px;
+	padding: 20px auto 10px;
 	text-align: center;
 	text-transform: uppercase;
 	color: #fff;
@@ -89,18 +92,18 @@ header li:hover{
 /*MAIN*/
 
 main{
-	width: 75%;
+	width: 80%;
 	margin: auto;
 	display: flex;
 	flex-direction: row;
+	margin-bottom: 100px;
+
 }
 
 /*MAIN GAUCHE : IMAGE*/
 
 .image{
-	position: fixed;
-	top: 180px;
-	left: 30px;
+	padding-left: -30px;
 }
 
 .image img{
@@ -109,6 +112,7 @@ main{
 	-webkit-clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
 	clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
 }
+
 
 .image ul{
 	display: flex;
@@ -119,6 +123,12 @@ main{
 
 .image li{
 	margin: 0 25px;
+}
+
+.image a:hover{
+	color: red;
+	transition: 0.9s ease;
+	font-size: 43px;
 }
 
 #sfdlogo{
@@ -139,15 +149,28 @@ main{
 
 #texte{
 	background: linear-gradient(to right, red, rgba(0,0,0, 0.1) );
-	margin-left: 25%;
-	/*position: relative;*/
+	
+
+
 }
 
-.content{
+#content1, #content2, #content3, #content4, #content5, #content6{
 	display: none;
 }
 
+button{
+	font-family: Orienta, Serif;
+	background-color: red;
+	color: #fff;
+	border: none;
+	cursor: pointer;
+	background:linear-gradient(to right, red,
+     #29292930   30%);
+}
 
+button:focus{
+	transition: 0.9s ease;
+}
 
 /*
 .show:hover + .content{
@@ -162,27 +185,14 @@ main{
 /*FOOTER*/
 
 footer{
+
 	position: absolute;
+	bottom: -100px;
+
 	width: 100%;
-	margin-top: 100px;
-	bottom: 0;
 	padding: 5px;
 	background:linear-gradient(to right, red,
-	 rgba(41, 41, 41, 1) 30%);
+	 #29292930  30%);
 	text-align: center;
 	justify-content: center;
-}
-
-input[type="text"]{
-    color: transparent;
-    text-shadow: 0 0 0 #000;
-    padding: 6px 12px;
-    width: 150px;
-    cursor: pointer;
-}
-input[type="text"]:focus{
-    outline: none;
-}
-input:focus + div#content1 {
-  display: block;
 }
