@@ -11,12 +11,12 @@ body{
 	/* https://www.pexels.com/search/web%20design/ */
 	background-size: cover;
 	color: #fff;
-	/*position: relative;*/
+	position: relative;
 }
 
 #container{
 	height: auto;
-    /*min-height: 100%;*/
+    min-height: 100%;
     position: relative;	  
 }
 
@@ -96,7 +96,7 @@ main{
 	margin: auto;
 	display: flex;
 	flex-direction: row;
-	margin-bottom: 100px;
+	/*margin-bottom: 100px;*/
 
 }
 
@@ -149,9 +149,6 @@ main{
 
 #texte{
 	background: linear-gradient(to right, red, rgba(0,0,0, 0.1) );
-	
-
-
 }
 
 #content1, #content2, #content3, #content4, #content5, #content6{
@@ -185,9 +182,8 @@ button:focus{
 /*FOOTER*/
 
 footer{
-
 	position: absolute;
-	bottom: -100px;
+	bottom: -80px;
 
 	width: 100%;
 	padding: 5px;
