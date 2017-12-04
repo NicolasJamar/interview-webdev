@@ -9,6 +9,9 @@ Error: Invalid CSS after "...(to right, red,": expected ")", was "#29292930   30
 5:      #29292930   30%);
 6: 	}
 7: }
+8: 
+9: $colorback=#29292930;
+10: 
 
 Backtrace:
 /home/user/becode/interview-webdev/assets/scss/style.scss:5
@@ -64,4 +67,4 @@ Backtrace:
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Invalid CSS after \"...(to right, red,\": expected \")\", was \"#29292930   30%);\"\A         on line 5 of /home/user/becode/interview-webdev/assets/scss/style.scss\A \A 1: header{\A 2: 	nav{\A 3: 	width : 100%;\A 4: 	background:linear-gradient(to right, red,\A 5:      #29292930   30%);\A 6: 	}\A 7: }"; }
+  content: "Error: Invalid CSS after \"...(to right, red,\": expected \")\", was \"#29292930   30%);\"\A         on line 5 of /home/user/becode/interview-webdev/assets/scss/style.scss\A \A 1: header{\A 2: 	nav{\A 3: 	width : 100%;\A 4: 	background:linear-gradient(to right, red,\A 5:      #29292930   30%);\A 6: 	}\A 7: }\A 8: \A 9: $colorback=#29292930;\A 10: "; }
