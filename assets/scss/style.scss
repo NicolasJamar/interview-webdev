@@ -1,0 +1,14 @@
+header{
+	nav{
+	width : 100%;
+	background:linear-gradient(to right, red,
+     #29292930   30%);
+	}
+}
+
+$colorback=#29292930;
+
+.titre{
+	background: linear-gradient(to right, red, $colorback 30%);
+	
+}
